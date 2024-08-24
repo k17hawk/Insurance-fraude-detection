@@ -52,13 +52,13 @@ The Code is written in Python 3.7. If you don't have Python installed you can fi
 # Run </br> 
 **Step 1**: Clone the repository. </br> 
 
-```git clone https://github.com/dipesg/Insurance_Fraud.git```
-**Step 2**: Create a virtual environment, either by using conda, pyenv, or venv.
+```git clone https://github.com/dipesg/Insurance_Fraud.git``` </br> 
+**Step 2**: Create a virtual environment, either by using conda, pyenv, or venv. </br> 
 
-```conda create -n fraud python=3.7 -y```
-**Step 3**: Install dependencies.
+```conda create -n fraud python=3.7 -y```  </br> 
+**Step 3**: Install dependencies. </br> 
 
-```pip install -r requirements.txt```
-**Step 4**: Run the app from the terminal.
+```pip install -r requirements.txt``` </br> 
+**Step 4**: Run the app from the terminal. </br> 
 
 ```python main.py```
