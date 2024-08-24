@@ -27,25 +27,24 @@ inserted in the already present table as we want training to be done on new as w
 # Data Preprocessing </br> 
 **Drop the columns not required for prediction.** </br> 
 **For this dataset, the null values were replaced with ‘?’ in the client data. Those ‘?’ have been replaced with NaN values.** </br> 
-Check for null values in the columns. If present, impute the null values using the categorical imputer. </br> 
-Replace and encode the categorical values with numeric values. </br> 
-Scale the numeric values using the standard scaler.</br> 
-Clustering
-KMeans algorithm is used to create clusters in the preprocessed data.
-The optimum number of clusters is selected by plotting the elbow plot, and for the dynamic selection of the number of clusters, we are using "KneeLocator" function. The idea behind clustering is to implement different algorithms.
-Model Selection
-We are using two algorithms, “SVM” and "XGBoost".
-For each cluster, both the algorithms are passed with the best parameters derived from GridSearch.
-We calculate the AUC scores for both models and select the model with the best score.
-The model is selected for each cluster and all the models for every cluster are saved for use in prediction.
-Prediction
-Data Export from Db - The data in the stored database is exported as a CSV file to be used for prediction.
-Data Preprocessing(Same steps as above)
-Clustering
-Prediction - Based on the cluster number, the respective model is loaded and is used to predict the data for that cluster.
+**Check for null values in the columns. If present, impute the null values using the categorical imputer.** </br> 
+**Replace and encode the categorical values with numeric values.** </br> 
+**Scale the numeric values using the standard scaler**</br> 
+# Clustering </br> 
+**KMeans algorithm is used to create clusters in the preprocessed data.** </br> 
+The optimum number of clusters is selected by plotting the elbow plot, and for the dynamic selection of the number of clusters, we are using the "KneeLocator" function. The idea behind clustering is to implement different algorithms.
+Model Selection </br> 
+We are using two algorithms, “SVM” and "XGBoost". </br> 
+For each cluster, both algorithms are passed with the best parameters derived from GridSearch. </br> 
+We calculate the AUC scores for both models and select the model with the best score. </br> 
+The model is selected for each cluster and all the models for every cluster are saved for use in prediction. </br> 
+Prediction </br> 
+**Data Export from Db** - The data in the stored database is exported as a CSV file to be used for prediction. </br> 
+**Data Preprocessing**(Same steps as above) </br> 
+Clustering </br> 
+**Prediction** - Based on the cluster number, the respective model is loaded and is used to predict the data for that cluster.</br> 
 Once the prediction is made for all the clusters, the predictions along with the Wafer names are saved in a CSV file at a given location, and the location is returned to the client.
-2 Flask app creation and Deployment.
-After flask app is created we deploy it on heroku.
-Installation
-The Code is written in Python 3.7. If you don't have Python installed you can find it here. If you are using a lower version of Python you can upgrade using the pip package, ensuring you have the latest version of pip. To install the required packages and libraries, run this command in the project directory after cloning the repository:
+
+# Installation </br> 
+The Code is written in Python 3.7. If you don't have Python installed you can find it here. If you are using a lower version of Python you can upgrade using the pip package, ensuring you have the latest version of pip. To install the required packages and libraries, run this command in the project directory after cloning the repository: </br> 
 
