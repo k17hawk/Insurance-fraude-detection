@@ -1,5 +1,7 @@
+## Architecture
+<img src="https://github.com/k17hawk/Insurance-fraude-detection/blob/main/156880590-5f640a12-a1df-4fc6-86bc-f844bdf66c00.png"/>
 # Overview </br> 
-This is an Insurance Fraud Classification Flask app trained on KMeans, KNN, and Xgboost. Here in this app data is given by the user in the form of csv format.</br> 
+This is an Insurance Fraud Classification Flask app trained on KMeans, KNN, and Xgboost. Here in this app data is given by the user in the form of CSV format.</br> 
 
 **Code is organized in a Modular Format.** </br> 
 First user input data is stored in a Sqlite database where a given CSV file is separated as a good file or a bad file according to the specified Schema file thus separate good file is given for model training.</br> 
