@@ -47,8 +47,9 @@ Prediction </br>
 **Data Preprocessing**(Same steps as above) </br> 
 Clustering </br> 
 **Prediction** - Based on the cluster number, the respective model is loaded and is used to predict the data for that cluster.</br> 
-Once the prediction is made for all the clusters, the predictions along with the Wafer names are saved in a CSV file at a given location, and the location is returned to the client.
-
+Once the prediction is made for all the clusters, the predictions along with the Wafer names are saved in a CSV file at a given location, and the location is returned to the client.</br>
+# Directory tree </br>
+<img src="https://github.com/k17hawk/Insurance-fraude-detection/blob/main/156911395-9aacd999-9977-4e35-96a4-bd8781a64df8.png"/>
 # Installation </br> 
 The Code is written in Python 3.7. If you don't have Python installed you can find it here. If you are using a lower version of Python you can upgrade using the pip package, ensuring you have the latest version of pip. To install the required packages and libraries, run this command in the project directory after cloning the repository: </br> 
 ```pip install -r requirements.txt```
