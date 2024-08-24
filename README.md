@@ -1,3 +1,5 @@
+## Demo </br>
+<img src="https://github.com/k17hawk/Insurance-fraude-detection/blob/main/demo.png"/>
 ## Architecture
 <img src="https://github.com/k17hawk/Insurance-fraude-detection/blob/main/156880590-5f640a12-a1df-4fc6-86bc-f844bdf66c00.png"/>
 # Overview </br> 
